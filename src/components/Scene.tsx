@@ -1,4 +1,4 @@
-import { Mesh } from "three";
+import { Mesh, MeshStandardMaterial } from "three";
 import { Graph, Node } from "../utils/graph";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sky } from "@react-three/drei";
@@ -27,7 +27,7 @@ export const Scene = () => {
   useEffect(() => {
     if (!terrain) return;
 
-    terrain.material.wireframe = enableWireframe;
+    (terrain.material as MeshStandardMaterial).wireframe = enableWireframe;
   }, [enableWireframe, terrain]);
 
   const mountainousTerrain = useMemo(
