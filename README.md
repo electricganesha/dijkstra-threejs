@@ -24,7 +24,7 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repo:
    ```sh
-   git clone https://github.com/YOUR_USERNAME/dijkstra-threejs.git
+   git clone https://github.com/electricganesha/dijkstra-threejs
    ```
 2. Navigate to the project directory:
    ```sh
